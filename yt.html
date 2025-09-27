@@ -1,14 +1,12 @@
-from http.server import HTTPServer, BaseHTTPRequestHandler
-content = """
 <html>
     <head>
         <title>
-           About  my device 
+           About  my device
         </title>
     </head>
+    <body bgcolor="black" text="white">
     <h1>Name: Maha Vishnu</h1>
     <h1>Ref no: 25018250</h1>
-    <body bgcolor="black" text="white">
       <table border="4" cellpadding="15" cellspacing="5" aligh="center" bordercolor="red">
         <tr>
             <th>s.no</th>
@@ -55,15 +53,3 @@ content = """
 
     </body>
 </html>
-"""
-class myhandler(BaseHTTPRequestHandler):
-    def do_GET(self):
-        print("request received")
-        self.send_response(200)
-        self.send_header('content-type', 'text/html; charset=utf-8')
-        self.end_headers()
-        self.wfile.write(content.encode())
-server_address = ('',8000)
-httpd = HTTPServer(server_address,myhandler)
-print("my webserver is running...")
-httpd.serve_forever()
