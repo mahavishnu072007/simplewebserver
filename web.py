@@ -3,12 +3,12 @@ content = """
 <html>
     <head>
         <title>
-           About  my device 
+           About  my device
         </title>
     </head>
+    <body bgcolor="black" text="white">
     <h1>Name: Maha Vishnu</h1>
     <h1>Ref no: 25018250</h1>
-    <body bgcolor="black" text="white">
       <table border="4" cellpadding="15" cellspacing="5" aligh="center" bordercolor="red">
         <tr>
             <th>s.no</th>
